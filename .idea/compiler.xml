@@ -9,7 +9,7 @@
         <module name="ApiGateway" />
         <module name="service-registry" />
       </profile>
-      <profile name="Annotation profile for question-service" enabled="true">
+      <profile name="Annotation profile for quiz_service" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -18,9 +18,11 @@
         </processorPath>
         <module name="quiz_service" />
         <module name="question-service" />
-        <module name="QuizApp" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="QuizApp" target="25" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
